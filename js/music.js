@@ -58,7 +58,8 @@ var app=new Vue({
             axios.get("https://autumnfish.cn/mv/url?id="+mvId).then(function(res){
                 // console.log(res);
                 that.mvUrl=res.data.data.url;
-                that.isShow=true
+                that.isShow=true;
+                that.musicUrl="";
             },function(err){
 
             })
